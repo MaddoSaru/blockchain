@@ -21,7 +21,7 @@ class blockchain:
     ) -> Dict:
         block = {
             "index": index,
-            "timestamp": datetime.now().timestamp(),
+            "timestamp": datetime.now().timestamp()*1e3,
             "data": data,
             "proof": proof,
             "previous_hash": previous_hash,
